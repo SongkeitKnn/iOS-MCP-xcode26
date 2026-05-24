@@ -65,6 +65,7 @@
 			);
 			name = "iOS-MCP-xcode26";
 			packageProductDependencies = (
+				54D4FC012FB99A4D00F719B0 /* MapLibre */,
 			);
 			productName = "iOS-MCP-xcode26";
 			productReference = 54D4FB182FB99A4D00F719B0 /* iOS-MCP-xcode26.app */;
@@ -98,6 +99,9 @@
 			productRefGroup = 54D4FB192FB99A4D00F719B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				54D4FC002FB99A4D00F719B0 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
 			targets = (
 				54D4FB172FB99A4D00F719B0 /* iOS-MCP-xcode26 */,
 			);
@@ -253,6 +257,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS-MCP-xcode26/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "MyPin needs your location to show your pins on the map and help you discover nearby places.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +290,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS-MCP-xcode26/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "MyPin needs your location to show your pins on the map and help you discover nearby places.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54D4FC002FB99A4D00F719B0 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54D4FC012FB99A4D00F719B0 /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54D4FC002FB99A4D00F719B0 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54D4FB102FB99A4D00F719B0 /* Project object */;
 }
